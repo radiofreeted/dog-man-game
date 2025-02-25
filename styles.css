@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: manipulation;
+}
+
+#root {
+    height: 100vh;
+}
+
+.game-area {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.animate-bounce {
+    animation: bounce 0.5s;
+}
+
+.animate-pulse {
+    animation: pulse 0.3s;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translate(-50%, -100%); }
+    50% { transform: translate(-50%, -150%); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: translate(-50%, -100%) scale(1); }
+    50% { transform: translate(-50%, -100%) scale(1.1); }
+}
